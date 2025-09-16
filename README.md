@@ -84,3 +84,10 @@ This made the UI cleaner and more readable.
 - Components are kept in separate files for clean code.
 - Props are passed in a simple, clear way to make the code easy to understand.
 - Each component is reusable and independent.
+
+# ✍️ Submitted By:
+
+Tayyab Khan
+
+I have completed this assignment with honesty and dedication ❤️  
+Done with full effort and from the heart. ✅
