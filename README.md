@@ -87,7 +87,7 @@ This made the UI cleaner and more readable.
 
 # 🚀 Deploying Vite + React App to GitHub Pages
 
-This guide explains how to deploy this project to **GitHub Pages**.
+This guide explains how to deploy this project to GitHub Pages.
 
 🔹 1. Install `gh-pages`
 
@@ -166,7 +166,7 @@ This will push the contents of the `dist/` folder to a branch called `gh-pages`.
 
    - Branch: `gh-pages`
    - Folder: `/ (root)`
-   - Click **Save**
+   - Click Save
 
 🔹 7. Access Your Live App
 
