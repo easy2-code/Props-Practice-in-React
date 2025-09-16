@@ -24,7 +24,6 @@ In this assignment, you will create a small React project to practice how props 
 
 ===============================================================
 Solution: 📖 Project Description – Props Practice in React
-===============================================================
 
 🎯 Objective
 
