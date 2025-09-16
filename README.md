@@ -1,5 +1,4 @@
-===============================================================
-📘 Assignment: Practice React Props
+# 📘 Assignment: Practice React Props
 
 In this assignment, you will create a small React project to practice how props work.
 ⚡ Props (_short for properties_) allow us to pass data from one component to another and make our components reusable.
