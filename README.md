@@ -22,8 +22,7 @@ In this assignment, you will create a small React project to practice how props 
 - 🧹 Code must be clean and readable.
 - 🌐 Push your project to GitHub and share the repo link.
 
-===============================================================
-Solution: 📖 Project Description – Props Practice in React
+# 📖 Solution: Project Description – Props Practice in React
 
 🎯 Objective
 
