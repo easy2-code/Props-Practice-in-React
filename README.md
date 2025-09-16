@@ -85,9 +85,107 @@ This made the UI cleaner and more readable.
 - Props are passed in a simple, clear way to make the code easy to understand.
 - Each component is reusable and independent.
 
+# 🚀 Deploying Vite + React App to GitHub Pages
+
+This guide explains how to deploy this project to **GitHub Pages**.
+
+🔹 1. Install `gh-pages`
+
+Inside your project, install the `gh-pages` package:
+
+npm install gh-pages --save-dev
+
+🔹 2. Configure `vite.config.js`
+
+Edit your `vite.config.js` file and add the `base` option with your repo name:
+
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react-swc";
+
+// https://vitejs.dev/config/
+export default defineConfig({
+plugins: [react()],
+base: "/ use your repo name here/",
+});
+
+🔹 3. Update `package.json` Scripts
+
+In your `package.json`, add `predeploy` and `deploy` scripts:
+
+"scripts": {
+"dev": "vite",
+"build": "vite build",
+"preview": "vite preview",
+"predeploy": "npm run build",
+"deploy": "gh-pages -d dist"
+}
+
+👉 (Optional but recommended) Also add a `homepage` field:
+
+"homepage": "https://easy2-code.github.io/Props-Practice-in-React"
+
+Like this:
+
+{
+"name": "props-practice",
+"private": true,
+"version": "0.0.0",
+"homepage": "https://easy2-code.github.io/Props-Practice-in-React",
+"type": "module",
+"scripts": {
+"dev": "vite",
+"build": "vite build",
+"preview": "vite preview",
+"predeploy": "npm run build",
+"deploy": "gh-pages -d dist"
+}
+}
+
+🔹 4. Build the Project
+
+Run this command inside in your project folder:
+
+npm run build
+
+This creates a `dist/` folder with the production build.
+
+🔹 5. Deploy to GitHub Pages
+
+Run this command inside in your project folder:
+
+npm run deploy
+
+This will push the contents of the `dist/` folder to a branch called `gh-pages`.
+
+🔹 6. Enable GitHub Pages
+
+1. Go to your repo on GitHub:
+   👉 [Props-Practice-in-React Settings](https://github.com/easy2-code/Props-Practice-in-React/settings/pages)
+2. Navigate to Settings → Pages
+3. Under Source, select:
+
+   - Branch: `gh-pages`
+   - Folder: `/ (root)`
+   - Click **Save**
+
+🔹 7. Access Your Live App
+
+After a few minutes, your app will be available at:
+
+👉 https://easy2-code.github.io/Props-Practice-in-React/ 🎉
+
+✅ Notes
+
+- If the page doesn’t load immediately, wait 2–5 minutes (GitHub Pages takes time).
+- Clear browser cache if you see an old version.
+- Always re-run:
+
+  npm run build
+  npm run deploy
+
 # ✍️ Submitted By:
 
 Tayyab Khan
 
-I have completed this assignment with honesty and dedication ❤️  
+I have completed this assignment with honesty and dedication ❤️
 Done with full effort and from the heart. ✅
